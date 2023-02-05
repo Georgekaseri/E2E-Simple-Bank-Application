@@ -1,0 +1,72 @@
+                      Day - 1
+1 :- create a folder for the project and making project name
+2 :- npm install typescript  -g (To install TypeScripts)
+3 :- npx tsc --init ( To create ts config file)
+4 :- npm init (To install Package.Json)
+5 :- npm install cypress (To Install cypress)
+6 :- npx cypress open (To open cypress IDE)
+7 :- Navigate to https:/www.saucedemo.com/
+                Locators
+                1. ID
+                2. Class
+                3. Xpath
+                4. CSS 
+                5. ByName
+                6. linkText
+                7. Partial link text
+
+                        Day 2
+:-  Delete more than 1 button function
+             cy.xpath("//button[.='Delete']").each(($el)=>{
+            $el.click()
+             })
+:- npm install --save-dav @faker-js/faker( To install fake data)
+
+                    How to use faker
+:- First add data into variable 
+             const firstName = faker.name.firstName();
+             cy.xpath("//input[@placeholder='First Name']").type(firstName);
+
+                        Day 3
+        Landing Page 
+1 : - Verify Home button on the Login Page 
+2 : - Verify that Customer and Bank Manager login button are available
+3 : - Verify Bank Name
+
+        Common Tests 
+1 : - Verify tooltip across pages
+
+        Bank Manager Home Page
+1 : - Bank Name, Home page should be visible
+2 : - Add Customer, Open Account, Customer should  be visible
+3 : - Selected tab should be highlighted
+
+        Customer Page
+1 : - On Creating Customer, Customer details should be display
+2 : - Search Customer
+3 : - Delete Customer
+4 : - Verify labels for first Name, last Name, Post Code, Account      
+      Number, Delete Customer labels should be display
+5 : - Account Numbers should be appended on adding accounts for the same Customer
+6 : - Sorting Customers by First name, Last name, and Post Code
+
+        Add Customer
+1 : - Verify that labels are displayed
+2 : - Verify Mandatory fields
+3 : - Add 10 Customers
+4 : - Verify Popup (Success Message)on adding Customer
+
+        Open Account
+1 : - Customer added should be loaded  into customer dropdown
+2 : - Currency should have Dollar, Pound, Rupee
+3 : - Verify Mandatory fields
+4 : - Verify Success Message
+
+        Customer Home Page
+1 : - labels Account Number, Balance, Currency should be displayed
+2 : - List of transactions should be displayed
+3 : - Welcome Message
+4 : - List of accounts
+5 : - Currency should be displayed as per Account Number Selected
+6 : - Logout should be displayed
+

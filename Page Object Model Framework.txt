@@ -1,0 +1,4 @@
+                        Day 1
+: - Create Base Url in cypress.config.ts under e2e { like this baseUrl:"https://www.way2automation.com/angularjs-protractor/banking/#/login"
+
+Create Class folder under SUPPORT
