@@ -119,7 +119,7 @@ describe('Banking Application Test',()=>{
         cy.get("button[type='submit']").click();
         cy.get("div[class='form-group'] label").should('have.text', 'Amount to be Deposited :')
         
-             // Verify deposit message
+             // Verify deposit message with
         cy.get(".error.ng-binding").should('be.visible').and ('have.text', 'Deposit Successful')
         
         cy.wait(2000)
